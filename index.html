@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio profesional - CV, proyectos y certificados">
+    <title>Mi Portfolio Profesional</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h2>Mi Portfolio</h2>
+            </div>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Inicio</a></li>
+                <li><a href="#about" class="nav-link">Sobre Mí</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#experience" class="nav-link">Experiencia</a></li>
+                <li><a href="#certificates" class="nav-link">Certificados</a></li>
+                <li><a href="#contact" class="nav-link">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    Hola, soy <span class="highlight">Tu Nombre</span>
+                </h1>
+                <p class="hero-subtitle">Desarrollador Full Stack | Diseñador Web | Creador de Soluciones</p>
+                <p class="hero-description">
+                    Apasionado por crear experiencias digitales excepcionales y soluciones innovadoras.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="btn btn-primary">Ver Proyectos</a>
+                    <a href="assets/cv.pdf" download class="btn btn-secondary">
+                        <i class="fas fa-download"></i> Descargar CV
+                    </a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/tu-usuario" target="_blank" class="social-link" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/tu-usuario" target="_blank" class="social-link" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:tu@email.com" class="social-link" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://twitter.com/tu-usuario" target="_blank" class="social-link" title="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-card">
+                    <div class="profile-img-wrapper">
+                        <img src="assets/images/profile.jpg" alt="Foto de perfil" class="profile-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#about">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <h2 class="section-title">Sobre Mí</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Soy un desarrollador apasionado con experiencia en crear aplicaciones web modernas y escalables. 
+                        Me especializo en tecnologías front-end y back-end, siempre buscando aprender y mejorar mis habilidades.
+                    </p>
+                    <p>
+                        Mi enfoque está en escribir código limpio, mantenible y eficiente, mientras creo experiencias 
+                        de usuario excepcionales que resuelven problemas reales.
+                    </p>
+                    <div class="skills">
+                        <h3>Habilidades Técnicas</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <i class="fab fa-html5"></i>
+                                <span>HTML5</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-css3-alt"></i>
+                                <span>CSS3</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-js"></i>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-react"></i>
+                                <span>React</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-node"></i>
+                                <span>Node.js</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-python"></i>
+                                <span>Python</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-database"></i>
+                                <span>SQL</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-git-alt"></i>
+                                <span>Git</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+        <div class="container">
+            <h2 class="section-title">Portfolio</h2>
+            <p class="section-subtitle">Algunos de mis proyectos destacados</p>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-img">
+                        <img src="assets/images/project1.jpg" alt="Proyecto 1">
+                        <div class="portfolio-overlay">
+                            <h3>E-Commerce Platform</h3>
+                            <p>Plataforma de comercio electrónico completa con React y Node.js</p>
+                            <div class="portfolio-links">
+                                <a href="https://github.com/tu-usuario/proyecto1" target="_blank" class="portfolio-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="portfolio-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-img">
+                        <img src="assets/images/project2.jpg" alt="Proyecto 2">
+                        <div class="portfolio-overlay">
+                            <h3>Task Management App</h3>
+                            <p>Aplicación de gestión de tareas con funcionalidades avanzadas</p>
+                            <div class="portfolio-links">
+                                <a href="https://github.com/tu-usuario/proyecto2" target="_blank" class="portfolio-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="portfolio-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-img">
+                        <img src="assets/images/project3.jpg" alt="Proyecto 3">
+                        <div class="portfolio-overlay">
+                            <h3>Weather Dashboard</h3>
+                            <p>Dashboard del clima con visualización de datos en tiempo real</p>
+                            <div class="portfolio-links">
+                                <a href="https://github.com/tu-usuario/proyecto3" target="_blank" class="portfolio-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="portfolio-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-img">
+                        <img src="assets/images/project4.jpg" alt="Proyecto 4">
+                        <div class="portfolio-overlay">
+                            <h3>Portfolio Website</h3>
+                            <p>Sitio web de portfolio moderno y responsive</p>
+                            <div class="portfolio-links">
+                                <a href="https://github.com/tu-usuario/proyecto4" target="_blank" class="portfolio-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="portfolio-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience section">
+        <div class="container">
+            <h2 class="section-title">Experiencia & Educación</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Desarrollador Full Stack</h3>
+                        <span class="timeline-date">2022 - Presente</span>
+                        <p class="timeline-company">Empresa Tech S.A.</p>
+                        <p>Desarrollo de aplicaciones web escalables utilizando React, Node.js y MongoDB. Implementación de arquitecturas modernas y mejores prácticas.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Desarrollador Frontend</h3>
+                        <span class="timeline-date">2020 - 2022</span>
+                        <p class="timeline-company">Startup Innovadora</p>
+                        <p>Creación de interfaces de usuario modernas y responsivas. Colaboración con equipos de diseño y backend para entregar productos de alta calidad.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Ingeniería en Sistemas</h3>
+                        <span class="timeline-date">2016 - 2020</span>
+                        <p class="timeline-company">Universidad Nacional</p>
+                        <p>Licenciatura en Ingeniería de Sistemas con especialización en desarrollo de software y bases de datos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="certificates section">
+        <div class="container">
+            <h2 class="section-title">Certificados</h2>
+            <p class="section-subtitle">Certificaciones y cursos completados</p>
+            <div class="certificates-grid">
+                <div class="certificate-item" data-certificate="1">
+                    <div class="certificate-img">
+                        <img src="assets/certificates/cert1.jpg" alt="Certificado 1">
+                        <div class="certificate-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <h3>Full Stack Web Development</h3>
+                    <p>Udemy - 2023</p>
+                </div>
+                <div class="certificate-item" data-certificate="2">
+                    <div class="certificate-img">
+                        <img src="assets/certificates/cert2.jpg" alt="Certificado 2">
+                        <div class="certificate-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <h3>React - The Complete Guide</h3>
+                    <p>Udemy - 2023</p>
+                </div>
+                <div class="certificate-item" data-certificate="3">
+                    <div class="certificate-img">
+                        <img src="assets/certificates/cert3.jpg" alt="Certificado 3">
+                        <div class="certificate-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <h3>Node.js Developer</h3>
+                    <p>Coursera - 2022</p>
+                </div>
+                <div class="certificate-item" data-certificate="4">
+                    <div class="certificate-img">
+                        <img src="assets/certificates/cert4.jpg" alt="Certificado 4">
+                        <div class="certificate-overlay">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                    <h3>Python for Data Science</h3>
+                    <p>edX - 2022</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <h2 class="section-title">Contacto</h2>
+            <p class="section-subtitle">¿Tienes un proyecto en mente? ¡Hablemos!</p>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>tu@email.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Teléfono</h3>
+                            <p>+34 123 456 789</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Ubicación</h3>
+                            <p>Madrid, España</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <div>
+                            <h3>GitHub</h3>
+                            <p><a href="https://github.com/tu-usuario" target="_blank">github.com/tu-usuario</a></p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Tu Nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Tu Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" placeholder="Tu Mensaje" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Mi Portfolio. Todos los derechos reservados.</p>
+                <div class="footer-social">
+                    <a href="https://github.com/tu-usuario" target="_blank" class="footer-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/tu-usuario" target="_blank" class="footer-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:tu@email.com" class="footer-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Certificate Modal -->
+    <div id="certificateModal" class="modal">
+        <span class="modal-close">&times;</span>
+        <img class="modal-content" id="modalImg">
+        <div id="modalCaption"></div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
